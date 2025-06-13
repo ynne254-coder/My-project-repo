@@ -1,0 +1,13 @@
+function calculatechalangeingredents {
+    [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
+    input=prompt{karibu!How many cups of chai? Bora would you like to make?}
+    let input_number_of_cups=2
+    let water=input_number_of_cups*200 ml
+    let milk =input_number_of_cups*50 ml
+    let tea_leaves=input_number_of_cups*2g
+    console.log(`To make ${input_number_of_cups} cups of chai, you will need:`);
+    console.log(`- ${water} of water`600ml);
+    console.log(`- ${milk} of milk 150ml`);
+    console.log(`- ${tea_leaves} of tea leaves`3tsp);
+    console.log(`- ${sugar} of sugar`6tsp);
+    console.log(`enjoy your chai!`);
